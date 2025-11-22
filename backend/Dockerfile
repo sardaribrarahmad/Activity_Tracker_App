@@ -1,7 +1,7 @@
 # Multi-stage build for backend
 
 # Stage 1: Dependencies
-FROM node:18-alpine AS dependencies
+FROM node:18-alpine AS dependenci
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --only=production
